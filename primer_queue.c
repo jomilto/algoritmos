@@ -33,11 +33,11 @@ void deQueue(){
 }
 
 void printQueue(){
-    printf(" Inicio de Queue. \n");
+    printf("Inicio de Queue. \n");
         for(int i = 0; i <= rear; i++){
             printf("%d -> %d \n",i,items[i]);
         }
-    printf(" Fin de Queue. \n");
+    printf("Fin de Queue. \n");
 }
 
 main(){
