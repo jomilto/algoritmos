@@ -17,7 +17,6 @@ void enQueue(int item){
 
 void deQueue(){
     if(rear == -1){
-        front = -1;
         printf("Nuestro queue esta vacio. \n ");
     }else{
         printf("Se elimino el valor %d correctamente. \n ", items[front]);
@@ -26,6 +25,10 @@ void deQueue(){
             items[i]= items[i+1];
         }
         rear--;
+        if (rear == -1){
+            front = -1;
+        }
+
     }
 }
 
