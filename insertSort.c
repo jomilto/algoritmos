@@ -10,7 +10,9 @@ void insertionSort(int arr[], int n)
        currentVal= arr[i]; //obtenemos el valor actual a comparar
        j = i-1;
   
-       /* mueve los elementos del arreglo arr[0..i-1],que son mayores que el valor de la posición actual del recorrido, a una posición adelante de su posición actual */
+       /* mueve los elementos del arreglo arr[0..i-1],
+       que son mayores que el valor de la posición actual del recorrido, 
+       a una posición adelante de su posición actual */
        while (j >= 0 && arr[j] > currentVal) 
        { 
            arr[j+1] = arr[j]; 
